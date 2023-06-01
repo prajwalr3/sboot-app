@@ -60,6 +60,9 @@ jobs:
 
     steps:
 
+      - name: Check the output from pervious job
+        run: "echo $GITHUB_OUTPUT"
+
       - name: Demo of how to access current matrix context
         run: |
           echo "Browser: " ${{ matrix.browser }}
