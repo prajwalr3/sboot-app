@@ -61,7 +61,7 @@ jobs:
     steps:
 
       - name: Check the output from pervious job
-        run: "cat $GITHUB_OUTPUT"
+        run: echo $GITHUB_OUTPUT
 
       - name: Demo of how to access current matrix context
         run: |
